@@ -50,7 +50,10 @@ def esb(request):
 
 def sendmail(request):
     client=get_client_by_request(request)
-    kwargs = {"receiver": "13302803028@189.cn",
+    kwargs = {
+        "bk_app_code":"cyctest1",
+        "bk_app_secret":"934c2047-9414-4ce0-924e-8f62e69d8944",
+        "receiver": "13302803028@189.cn",
         "sender": "836963281@qq.com",
         "title": "This is a Test",
         "content": "<html>Welcome to Blueking</html>",
